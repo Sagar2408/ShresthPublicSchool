@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-large">
               <img
-                src="/images/school-entrance.jpg"
+                src="/images/frontpic.jpg"
                 alt="Shresth Public School Campus"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />

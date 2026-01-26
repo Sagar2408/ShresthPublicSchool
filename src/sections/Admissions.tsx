@@ -27,10 +27,7 @@ const Admissions: React.FC = () => {
     e.preventDefault();
 
     if (
-      !formData.studentName ||
-      !formData.parentName ||
-      !formData.phone ||
-      !formData.grade
+      !formData.phone
     ) {
       alert('Please fill all required fields.');
       return;
@@ -137,7 +134,7 @@ const Admissions: React.FC = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-1">
-                      Student Name *
+                      Student Name
                     </label>
                     <input
                       type="text"
@@ -152,7 +149,7 @@ const Admissions: React.FC = () => {
 
                   <div>
                     <label className="block text-sm font-medium mb-1">
-                      Parent Name *
+                      Parent Name
                     </label>
                     <input
                       type="text"
@@ -184,7 +181,7 @@ const Admissions: React.FC = () => {
 
                   <div>
                     <label className="block text-sm font-medium mb-1">
-                      Class *
+                      Class
                     </label>
                     <input
                       type="number"

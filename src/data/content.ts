@@ -2,10 +2,11 @@ import type { NavItem, Testimonial, Announcement, GalleryImage, Facility, Activi
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
+  { label: 'Our Principal', href: '#principal' },
   { label: 'About Us', href: '#about' },
   { label: 'Academics', href: '#academics' },
   { label: 'Admissions', href: '#admissions' },
-  { label: 'Facilities', href: '#facilities' },
+  // { label: 'Facilities', href: '#facilities' },
   { label: 'Activities', href: '#activities' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'News & Events', href: '#news' },

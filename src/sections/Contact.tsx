@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+    if (!formData.phone) {
       alert('Please fill all required fields.');
       return;
     }
@@ -151,7 +151,7 @@ const Contact: React.FC = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name *"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email *"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -176,7 +176,7 @@ const Contact: React.FC = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="Phone"
+                    placeholder="Phone*"
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg 
@@ -204,7 +204,7 @@ const Contact: React.FC = () => {
                 <textarea
                   name="message"
                   rows={5}
-                  placeholder="Message *"
+                  placeholder="Message"
                   value={formData.message}
                   onChange={handleChange}
                   required
