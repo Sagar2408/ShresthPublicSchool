@@ -8,10 +8,11 @@ const Admissions: React.FC = () => {
     email: '',
     phone: '',
     grade: '',
-    dateOfBirth: '',
+    dateOfBirth: new Date().toISOString().split('T')[0], // ✅ HERE
     address: '',
     message: '',
   });
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,7 +21,9 @@ const Admissions: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (
@@ -33,19 +36,41 @@ const Admissions: React.FC = () => {
       return;
     }
 
-    alert('Thank you for your admission enquiry! We will contact you soon.');
+    try {
+      await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // 🔥 MOST IMPORTANT
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'admission',
+          ...formData,
+        }),
+      });
 
-    setFormData({
-      studentName: '',
-      parentName: '',
-      email: '',
-      phone: '',
-      grade: '',
-      dateOfBirth: '',
-      address: '',
-      message: '',
-    });
+      // no-cors me response read nahi kar sakte
+      // but data Google Sheet me insert ho jata hai
+
+      alert('Admission enquiry submitted successfully!');
+
+      setFormData({
+        studentName: '',
+        parentName: '',
+        email: '',
+        phone: '',
+        grade: '',
+        dateOfBirth: new Date().toISOString().split('T')[0],
+        address: '',
+        message: '',
+      });
+
+    } catch (error) {
+      alert('Something went wrong. Please try again.');
+    }
   };
+
+
 
   return (
     <section
@@ -69,192 +94,191 @@ const Admissions: React.FC = () => {
 
         <div className="grid lg:grid-cols-[1fr_1.3fr] gap-12">
 
-  {/* ================= LEFT CONTENT ================= */}
-  <div>
-    <h3 className="text-2xl font-bold text-school-dark mb-6">
-      Admission Process
-    </h3>
-
-    <div className="space-y-6">
-      {[
-        { step: '01', title: 'Submit Enquiry', description: 'Fill the online admission form.' },
-        { step: '02', title: 'School Tour', description: 'Visit the campus.' },
-        { step: '03', title: 'Entrance Test', description: 'Simple academic assessment.' },
-        { step: '04', title: 'Document Verification', description: 'Submit required documents.' },
-      ].map((item, index) => (
-        <div key={index} className="flex gap-4">
-          <div className="w-11 h-11 bg-school-primary rounded-xl flex items-center justify-center">
-            <span className="text-white font-bold">{item.step}</span>
-          </div>
+          {/* ================= LEFT CONTENT ================= */}
           <div>
-            <h4 className="font-semibold text-school-dark mb-1">
-              {item.title}
-            </h4>
-            <p className="text-gray-600 text-sm">
-              {item.description}
-            </p>
+            <h3 className="text-2xl font-bold text-school-dark mb-6">
+              Admission Process
+            </h3>
+
+            <div className="space-y-6">
+              {[
+                { step: '01', title: 'Submit Enquiry', description: 'Fill the online admission form.' },
+                { step: '02', title: 'School Tour', description: 'Visit the campus.' },
+                { step: '03', title: 'Entrance Test', description: 'Simple academic assessment.' },
+                { step: '04', title: 'Document Verification', description: 'Submit required documents.' },
+              ].map((item, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="w-11 h-11 bg-school-primary rounded-xl flex items-center justify-center">
+                    <span className="text-white font-bold">{item.step}</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-school-dark mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* ================= RIGHT FORM ================= */}
+          <div className="flex justify-end">
+            <div className="bg-white rounded-2xl p-6 shadow-large w-full max-w-3xl">
+              <h3 className="text-2xl font-bold text-school-dark mb-4">
+                Admission Enquiry
+              </h3>
+
+              <form onSubmit={handleSubmit} className="space-y-3">
+
+                {/* REQUIRED FIELDS */}
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Student Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="studentName"
+                      placeholder=" e.g. Rohan"
+                      value={formData.studentName}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Parent Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="parentName"
+                      placeholder="e.g. Ramesh Kumar Singh"
+                      value={formData.parentName}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="e.g. 9876543210"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Class *
+                    </label>
+                    <input
+                      type="number"
+                      name="grade"
+                      placeholder="e.g.1,2,3..."
+                      value={formData.grade}
+                      onChange={handleChange}
+                      required
+                      min={1}
+                      max={12}
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                {/* EMAIL + DOB */}
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="example@gmail.com"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+
+                  {/* DOB WITH TEXT + CALENDAR */}
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Date of Birth
+                    </label>
+                    <input
+                      type="text"
+                      name="dateOfBirth"
+                      placeholder="DD/MM/YYYY"
+                      value={formData.dateOfBirth}
+                      onChange={handleChange}
+                      onFocus={(e) => (e.target.type = 'date')}
+                      onBlur={(e) => (e.target.type = 'text')}
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                {/* ADDRESS + MESSAGE */}
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Address
+                    </label>
+                    <textarea
+                      name="address"
+                      placeholder="House No, Street, City"
+                      value={formData.address}
+                      onChange={handleChange}
+                      rows={2}
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-1">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      placeholder="Any additional message..."
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={2}
+                      className="w-full px-4 py-2 border rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-school-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                >
+                  Submit Enquiry
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+
+
         </div>
-      ))}
-    </div>
-  </div>
-
-  {/* ================= RIGHT FORM ================= */}
-<div className="flex justify-end">
-  <div className="bg-white rounded-2xl p-6 shadow-large w-full max-w-3xl">
-    <h3 className="text-2xl font-bold text-school-dark mb-4">
-      Admission Enquiry
-    </h3>
-
-    <form onSubmit={handleSubmit} className="space-y-3">
-
-      {/* REQUIRED FIELDS */}
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Student Name *
-          </label>
-          <input
-            type="text"
-            name="studentName"
-            placeholder=" e.g. Rohan"
-            value={formData.studentName}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Parent Name *
-          </label>
-          <input
-            type="text"
-            name="parentName"
-            placeholder="e.g. Ramesh Kumar Singh"
-            value={formData.parentName}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-      </div>
-
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Phone Number *
-          </label>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="e.g. 9876543210"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Class *
-          </label>
-          <input
-            type="number"
-            name="grade"
-            placeholder="e.g.1,2,3..."
-            value={formData.grade}
-            onChange={handleChange}
-            required
-            min={1}
-            max={12}
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-      </div>
-
-      {/* EMAIL + DOB */}
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            placeholder="example@gmail.com"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-
-        {/* DOB WITH TEXT + CALENDAR */}
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Date of Birth
-          </label>
-          <input
-            type="text"
-            name="dateOfBirth"
-            placeholder="DD/MM/YYYY"
-            value={formData.dateOfBirth}
-            onChange={handleChange}
-            onFocus={(e) => (e.target.type = 'date')}
-            onBlur={(e) => (e.target.type = 'text')}
-            defaultValue={new Date().toISOString().split('T')[0]}
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-      </div>
-
-      {/* ADDRESS + MESSAGE */}
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Address
-          </label>
-          <textarea
-            name="address"
-            placeholder="House No, Street, City"
-            value={formData.address}
-            onChange={handleChange}
-            rows={2}
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Message
-          </label>
-          <textarea
-            name="message"
-            placeholder="Any additional message..."
-            value={formData.message}
-            onChange={handleChange}
-            rows={2}
-            className="w-full px-4 py-2 border rounded-lg"
-          />
-        </div>
-      </div>
-
-      <button
-        type="submit"
-        className="w-full bg-school-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-      >
-        Submit Enquiry
-      </button>
-
-    </form>
-  </div>
-</div>
-
-
-
-</div>
 
 
         {/* ================= FEE STRUCTURE =================

@@ -12,11 +12,42 @@ const Contact: React.FC = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      alert('Please fill all required fields.');
+      return;
+    }
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // 🔥 IMPORTANT (same as admission form)
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'contact',
+          ...formData,
+        }),
+      });
+
+      alert('Thank you for your message! We will get back to you soon.');
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+      });
+
+    } catch (error) {
+      alert('Something went wrong. Please try again later.');
+    }
   };
+  const SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -124,7 +155,9 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="input"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+  focus:outline-none focus:border-school-primary 
+  focus:ring-2 focus:ring-school-primary/20 transition"
                   />
                   <input
                     type="email"
@@ -133,7 +166,9 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="input"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+  focus:outline-none focus:border-school-primary 
+  focus:ring-2 focus:ring-school-primary/20 transition"
                   />
                 </div>
 
@@ -144,7 +179,9 @@ const Contact: React.FC = () => {
                     placeholder="Phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="input"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+  focus:outline-none focus:border-school-primary 
+  focus:ring-2 focus:ring-school-primary/20 transition"
                   />
 
                   <select
@@ -152,7 +189,9 @@ const Contact: React.FC = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="input"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+  focus:outline-none focus:border-school-primary 
+  focus:ring-2 focus:ring-school-primary/20 transition"
                   >
                     <option value="">Select Subject</option>
                     <option value="admission">Admission</option>
@@ -169,7 +208,9 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="input"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+  focus:outline-none focus:border-school-primary 
+  focus:ring-2 focus:ring-school-primary/20 transition"
                 />
 
                 <button
