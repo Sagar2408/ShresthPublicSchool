@@ -1,15 +1,7 @@
 import React from 'react';
-import { whyChooseUs } from '@/data/content';
-import { GraduationCap, Users, Building2, Palette, Shield, Heart } from '@/components/Icons';
 
-const iconMap: { [key: string]: React.FC<{ className?: string; size?: number }> } = {
-  GraduationCap,
-  Users,
-  Building2,
-  Palette,
-  Shield,
-  Heart,
-};
+
+
 
 const WhyChooseUs: React.FC = () => {
   return (
