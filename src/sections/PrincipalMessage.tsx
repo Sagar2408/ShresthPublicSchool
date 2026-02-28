@@ -24,7 +24,7 @@ const PrincipalMessage: React.FC = () => {
                     {/* LEFT IMAGE */}
                     <div className="flex justify-center lg:justify-start">
                         <img
-                            src="/images/Naresh baisla.jpg"
+                            src="/images/principal.jpg"
                             alt="Principal"
                             className="w-80 h-96 lg:w-[380px] lg:h-[460px] 
                          object-cover rounded-2xl shadow-large"
@@ -41,7 +41,7 @@ const PrincipalMessage: React.FC = () => {
                         </p>
 
                         <p className="text-gray-700 leading-relaxed">
-                            At <strong>Shresth Public School</strong>, we strongly believe that
+                            At <strong>BK Gyan Deep Public School</strong>, we strongly believe that
                             every child is unique and gifted with immense potential. Our goal
                             is to provide a nurturing and inspiring environment where students
                             feel encouraged to explore their curiosity, develop self-confidence,
@@ -68,10 +68,10 @@ const PrincipalMessage: React.FC = () => {
 
                         <div className="mt-6">
                             <p className="font-semibold text-school-dark text-lg">
-                                Shri. Naresh Baisla
+                                Shri. Laxmi Narayan Ji
                             </p>
                             <p className="text-sm text-gray-600">
-                                Principal, Shresth Public School
+                                Principal, BK Gyan Deep Public School
                             </p>
                         </div>
                     </div>

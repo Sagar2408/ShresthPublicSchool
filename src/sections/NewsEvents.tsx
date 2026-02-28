@@ -18,7 +18,7 @@ const NewsEvents: React.FC = () => {
             Latest Updates
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Stay updated with the latest announcements, events, and important notices from Shresth Public School
+            Stay updated with the latest announcements, events, and important notices from BK Gyan Deep Public School
           </p>
         </div>
 

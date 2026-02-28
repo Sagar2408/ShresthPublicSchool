@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
             Our School in Pictures
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our campus, facilities, events, and the vibrant life at Shresth Public School
+            Explore our campus, facilities, events, and the vibrant life at BK Gyan Deep Public School
           </p>
         </div>
 

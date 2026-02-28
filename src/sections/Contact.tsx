@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Office Hours</h4>
-                    <p className="text-gray-600">Mon - Sat: 7:30 AM - 2:30 PM</p>
+                    <p className="text-gray-600">Mon - Sat: 8:00 AM - 12:30 PM</p>
                     <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>
@@ -128,10 +128,11 @@ const Contact: React.FC = () => {
             <div className="mt-8 rounded-2xl overflow-hidden h-64">
               <iframe
                 title="School Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8161968110903!2d77.27134577399431!3d28.54524388804191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e4d97b4aeb%3A0x4434ce3dd228ff07!2sShreshth%20Public%20School!5e0!3m2!1sen!2sin!4v1769319596244!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5986739029477!2d77.28465227399319!3d28.521719889106897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce7a28b48cff3%3A0xfff17363200598!2sBk%20Gyan%20deep%20public%20school!5e0!3m2!1sen!2sin!4v1772256051487!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 loading="lazy"
+                allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
                 className="border-0"
               />

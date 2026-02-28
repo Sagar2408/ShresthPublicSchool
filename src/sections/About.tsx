@@ -18,27 +18,10 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-large">
               <img
-                src="/images/frontpic.jpg"
-                alt="Shresth Public School Campus"
+                src="/images/gyandeep.jpg"
+                alt="BK Gyan Deep Public School Campus"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
-              {/* Overlay Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-5 shadow-lg">
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-school-primary">28+</div>
-                    <div className="text-xs lg:text-sm text-gray-600">Years</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-school-secondary">5000+</div>
-                    <div className="text-xs lg:text-sm text-gray-600">Students</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-school-accent">98%</div>
-                    <div className="text-xs lg:text-sm text-gray-600">Results</div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Decorative Element */}
@@ -70,7 +53,7 @@ const About: React.FC = () => {
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               {[
                 { icon: '✓', text: 'CBSE Affiliated Curriculum' },
-                { icon: '✓', text: 'Classes from Nursery to XII' },
+                { icon: '✓', text: 'Classes from Nursery to VIII' },
                 { icon: '✓', text: 'Modern Infrastructure' },
                 { icon: '✓', text: 'Holistic Development' },
               ].map((item, index) => (

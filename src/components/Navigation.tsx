@@ -41,7 +41,7 @@ const Navigation: React.FC = () => {
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
               </svg>
-              Mon - Sat: 7:30 AM - 2:30 PM
+              Mon - Sat: 8:00 AM - 12:30 PM
             </span>
           </div>
         </div>

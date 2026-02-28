@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
             What Parents Say
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Hear from our parents and students about their experience at Shresth Public School
+            Hear from our parents and students about their experience at BK Gyan Deep Public School
           </p>
         </div>
 
