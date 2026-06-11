@@ -1,13 +1,12 @@
-import type { NavItem, Testimonial, Announcement, GalleryImage, Facility, Activity, TeamMember, AdmissionInfo } from '@/types';
+import type { NavItem, Testimonial, Announcement, GalleryImage, Facility, TeamMember, AdmissionInfo } from '@/types';
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
-  { label: 'Our Principal', href: '#principal' },
   { label: 'About Us', href: '#about' },
+  { label: 'Our Principal', href: '#principal' },
   { label: 'Academics', href: '#academics' },
   { label: 'Admissions', href: '#admissions' },
   // { label: 'Facilities', href: '#facilities' },
-  { label: 'Activities', href: '#activities' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'News & Events', href: '#news' },
   { label: 'Contact', href: '#contact' },
@@ -96,14 +95,6 @@ export const whyChooseUs = [
   },
 ];
 
-export const infrastructure = [
-  { title: 'Spacious Classrooms', count: '60+' },
-  { title: 'Science Labs', count: '6' },
-  { title: 'Computer Labs', count: '3' },
-  { title: 'Libraries', count: '2' },
-  { title: 'Sports Fields', count: '5' },
-  { title: 'Activity Rooms', count: '8' },
-];
 
 export const testimonials: Testimonial[] = [
   {
@@ -141,18 +132,30 @@ export const announcements: Announcement[] = [
 ];
 
 export const galleryImages: GalleryImage[] = [
-  { id: 1, src: '/images/annual-day.jpg', alt: 'Annual Day Function', category: 'Events' },
-  { id: 2, src: '/images/science-lab.jpg', alt: 'Science Laboratory', category: 'Labs' },
-  { id: 3, src: '/images/sports-ground.jpg', alt: 'Sports Ground', category: 'Sports' },
-  { id: 4, src: '/images/art-class.jpg', alt: 'Art Class', category: 'Activities' },
-  { id: 5, src: '/images/library.jpg', alt: 'School Library', category: 'Infrastructure' },
-  { id: 6, src: '/images/yoga-class.jpg', alt: 'Yoga Class', category: 'Activities' },
-  { id: 7, src: '/images/computer-lab.jpg', alt: 'Computer Lab', category: 'Labs' },
-  { id: 8, src: '/images/music-class.jpg', alt: 'Music Class', category: 'Activities' },
-  { id: 9, src: '/images/assembly.jpg', alt: 'Morning Assembly', category: 'Events' },
-  { id: 10, src: '/images/playground.jpg', alt: 'Playground', category: 'Sports' },
-  { id: 11, src: '/images/debate-competition.jpg', alt: 'Debate Competition', category: 'Events' },
-  { id: 12, src: '/images/science-exhibition.jpg', alt: 'Science Exhibition', category: 'Events' },
+  { id: 1,  src: '/photos/K1.jpeg',        alt: 'Students in Class',        category: 'Students' },
+  { id: 2,  src: '/photos/K2.jpeg',        alt: 'Classroom Activity',        category: 'Students' },
+  { id: 3,  src: '/photos/K3.jpeg',        alt: 'Students Learning',         category: 'Students' },
+  { id: 4,  src: '/photos/K4.jpeg',        alt: 'Students at Work',          category: 'Students' },
+  { id: 5,  src: '/photos/K5.jpeg',        alt: 'Classroom Engagement',      category: 'Students' },
+  { id: 6,  src: '/photos/k6.jpeg',        alt: 'Students in Session',       category: 'Students' },
+  { id: 7,  src: '/photos/k7.jpeg',        alt: 'Learning Together',         category: 'Students' },
+  { id: 8,  src: '/photos/k8.jpeg',        alt: 'Class in Progress',         category: 'Students' },
+  { id: 9,  src: '/photos/K9.jpeg',        alt: 'Students at School',        category: 'Students' },
+  { id: 10, src: '/photos/K10.jpeg',       alt: 'School Activity',           category: 'Students' },
+  { id: 11, src: '/photos/k11.jpeg',       alt: 'Classroom Session',         category: 'Students' },
+  { id: 12, src: '/photos/k12.jpeg',       alt: 'Students Together',         category: 'Students' },
+  { id: 13, src: '/photos/N1.jpeg',        alt: 'Nursery Class',             category: 'Campus' },
+  { id: 14, src: '/photos/N2.jpeg',        alt: 'Young Learners',            category: 'Campus' },
+  { id: 15, src: '/photos/N3.jpeg',        alt: 'Early Childhood',           category: 'Campus' },
+  { id: 16, src: '/photos/building1.jpeg', alt: 'School Building',           category: 'Campus' },
+  { id: 17, src: '/photos/building2.jpeg', alt: 'School Campus',             category: 'Campus' },
+  { id: 18, src: '/photos/building3.jpeg', alt: 'Campus View',               category: 'Campus' },
+  { id: 19, src: '/photos/building4.jpeg', alt: 'School Grounds',            category: 'Campus' },
+  { id: 20, src: '/photos/c1.jpeg',        alt: 'Classroom',                 category: 'Campus' },
+  { id: 21, src: '/photos/PrincipalPhoto.jpeg', alt: 'School Life',           category: 'Campus' },
+  { id: 22, src: '/photos/pk.jpeg',        alt: 'Students Playing',          category: 'Students' },
+  { id: 23, src: '/photos/teachers1.jpeg', alt: 'Our Faculty',               category: 'Faculty' },
+  { id: 24, src: '/photos/teachers2.jpeg', alt: 'Teaching Staff',            category: 'Faculty' },
 ];
 
 export const facilities: Facility[] = [
@@ -214,50 +217,6 @@ export const facilities: Facility[] = [
   },
 ];
 
-export const activities: Activity[] = [
-  {
-    id: 1,
-    title: 'Sports & Games',
-    description: 'Comprehensive sports program including cricket, football, basketball, badminton, and athletics with professional coaching.',
-    icon: 'Medal',
-    image: '/images/sports-ground.jpg',
-  },
-  {
-    id: 2,
-    title: 'Arts & Crafts',
-    description: 'Creative expression through painting, sculpture, pottery, and various craft activities under expert guidance.',
-    icon: 'Palette',
-    image: '/images/art-class.jpg',
-  },
-  {
-    id: 3,
-    title: 'Music & Dance',
-    description: 'Training in vocal and instrumental music along with classical and contemporary dance forms.',
-    icon: 'Music',
-    image: '/images/music-class.jpg',
-  },
-  {
-    id: 4,
-    title: 'Debate & Public Speaking',
-    description: 'Regular debates, elocution competitions, and public speaking workshops to build communication skills.',
-    icon: 'Mic',
-    image: '/images/debate-competition.jpg',
-  },
-  {
-    id: 5,
-    title: 'Yoga & Meditation',
-    description: 'Daily yoga sessions and mindfulness practices to promote physical and mental well-being.',
-    icon: 'Sparkles',
-    image: '/images/yoga-class.jpg',
-  },
-  {
-    id: 6,
-    title: 'Science Club',
-    description: 'Hands-on experiments, science exhibitions, and innovation projects to foster scientific temper.',
-    icon: 'Lightbulb',
-    image: '/images/science-exhibition.jpg',
-  },
-];
 
 export const managementTeam: TeamMember[] = [
   {
@@ -299,12 +258,6 @@ export const admissionInfo: AdmissionInfo[] = [
   { grade: 'Class 11-12', ageCriteria: '16-17 years', documents: ['Class 10 Marksheet', 'Transfer Certificate', 'Character Certificate'], fees: '₹80,000/year' },
 ];
 
-export const academicHighlights = [
-  { year: '2023', class10: '98.5%', class12: '96.8%', toppers: '12' },
-  { year: '2022', class10: '97.2%', class12: '95.5%', toppers: '10' },
-  { year: '2021', class10: '96.8%', class12: '94.2%', toppers: '8' },
-  { year: '2020', class10: '95.5%', class12: '93.8%', toppers: '9' },
-];
 
 export const subjectsByGrade = {
   'Nursery-V': ['English', 'Mathematics', 'Environmental Studies', 'Hindi', 'Art & Craft', 'Music', 'Physical Education'],

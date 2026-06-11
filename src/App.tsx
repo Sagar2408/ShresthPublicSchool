@@ -5,11 +5,9 @@ import About from '@/sections/About';
 import PrincipalMessage from '@/sections/PrincipalMessage';
 import VisionMission from '@/sections/VisionMission';
 import WhyChooseUs from '@/sections/WhyChooseUs';
-import Infrastructure from '@/sections/Infrastructure';
 import Academics from '@/sections/Academics';
 import Admissions from '@/sections/Admissions';
 // import Facilities from '@/sections/Facilities';
-import Activities from '@/sections/Activities';
 import Gallery from '@/sections/Gallery';
 import NewsEvents from '@/sections/NewsEvents';
 import Testimonials from '@/sections/Testimonials';
@@ -18,7 +16,7 @@ import Footer from '@/components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navigation />
       <main>
         <Hero />
@@ -26,11 +24,9 @@ function App() {
         <PrincipalMessage />
         <VisionMission />
         <WhyChooseUs />
-        <Infrastructure />
         <Academics />
         <Admissions />
         {/* <Facilities /> */}
-        <Activities />
         <Gallery />
         <NewsEvents />
         <Testimonials />

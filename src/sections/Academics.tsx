@@ -1,5 +1,4 @@
 import React from 'react';
-import { academicHighlights } from '@/data/content';
 
 const Academics: React.FC = () => {
   const subjects = [
@@ -28,53 +27,6 @@ const Academics: React.FC = () => {
             Comprehensive curriculum designed to nurture academic excellence and holistic development
           </p>
         </div>
-
-        {/* ================= ACADEMIC PERFORMANCE ================= */}
-<div className="bg-gradient-to-r from-school-primary/5 to-school-secondary/5 rounded-2xl p-8 mb-12">
-  <h3 className="text-2xl font-bold text-school-dark text-center mb-10">
-    Academic Performance
-  </h3>
-
-  <div className="grid md:grid-cols-4 gap-6">
-    {academicHighlights.map((year, index) => (
-      <div
-        key={index}
-        className="bg-white rounded-xl p-6 text-center shadow-soft"
-      >
-        {/* STUDENT PHOTO */}
-        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gray-200 overflow-hidden flex items-center justify-center">
-          {/* Replace src with real student photo later */}
-          <img
-            src="/images/topperimage.jpg"
-            alt="Student"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        {/* YEAR */}
-        <h4 className="text-sm font-semibold text-gray-500 mb-2">
-          {year.year}
-        </h4>
-
-        {/* CLASS */}
-        <p className="text-lg font-semibold text-school-dark">
-          Class 10
-        </p>
-
-        {/* MARKS */}
-        <p className="text-2xl font-bold text-school-primary mt-1">
-          {year.class10}
-        </p>
-
-        {/* OPTIONAL SUBTEXT */}
-        <p className="text-xs text-gray-500 mt-2">
-          Board Result
-        </p>
-      </div>
-    ))}
-  </div>
-</div>
-
 
         {/* ================= CURRICULUM + SUBJECTS ================= */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">

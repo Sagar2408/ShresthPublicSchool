@@ -19,15 +19,14 @@ const PrincipalMessage: React.FC = () => {
                 </div>
 
                 {/* CONTENT */}
-                <div className="grid lg:grid-cols-2 gap-14 items-center">
+                <div className="grid lg:grid-cols-2 gap-10 items-center">
 
                     {/* LEFT IMAGE */}
-                    <div className="flex justify-center lg:justify-start">
+                    <div className="w-full h-80 lg:h-[460px] rounded-2xl overflow-hidden shadow-large">
                         <img
-                            src="/images/Naresh baisla.jpg"
+                            src="/photos/p1.jpeg"
                             alt="Principal"
-                            className="w-80 h-96 lg:w-[380px] lg:h-[460px] 
-                         object-cover rounded-2xl shadow-large"
+                            className="w-full h-full object-cover"
                         />
                     </div>
 

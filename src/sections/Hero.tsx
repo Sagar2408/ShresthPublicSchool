@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-school.jpg"
+          src="/photos/AboutUsphoto.jpeg"
           alt="Shresth Public School"
           className="w-full h-full object-cover"
         />

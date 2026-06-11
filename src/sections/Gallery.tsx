@@ -4,13 +4,6 @@ import { X } from '@/components/Icons';
 
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [activeCategory, setActiveCategory] = useState<string>('All');
-
-  const categories = ['All', ...Array.from(new Set(galleryImages.map(img => img.category)))];
-
-  const filteredImages = activeCategory === 'All'
-    ? galleryImages
-    : galleryImages.filter(img => img.category === activeCategory);
 
   return (
     <section id="gallery" className="section-padding bg-white">
@@ -28,26 +21,9 @@ const Gallery: React.FC = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                activeCategory === category
-                  ? 'bg-school-primary text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
         {/* Gallery Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {filteredImages.map((image, index) => (
+          {galleryImages.map((image, index) => (
             <div
               key={index}
               className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer img-zoom"
@@ -58,22 +34,13 @@ const Gallery: React.FC = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover"
               />
-              {/* Overlay */}
               <div className="absolute inset-0 bg-school-dark/0 group-hover:bg-school-dark/60 transition-all duration-300 flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity text-center text-white p-4">
-                  <h4 className="font-semibold mb-1">{image.alt}</h4>
-                  <p className="text-sm text-white/80">{image.category}</p>
+                  <h4 className="font-semibold">{image.alt}</h4>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* View More Button */}
-        <div className="text-center mt-8">
-          <button className="bg-school-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            View All Photos
-          </button>
         </div>
       </div>
 

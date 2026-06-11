@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-school-dark text-white">
+    <footer className="bg-school-footer text-white">
       {/* ================= MAIN FOOTER ================= */}
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -58,56 +58,31 @@ const Footer: React.FC = () => {
 
             {/* SOCIAL LINKS */}
             <div className="flex gap-3">
-              {[
-                {
-                  name: 'facebook',
-                  href: 'https://www.facebook.com/p/Shreshth-Public-School-100042410786539/',
-                },
-                {
-                  name: 'instagram',
-                  href: 'https://www.instagram.com/shreshth_public_school/',
-                },
-                {
-                  name: 'twitter',
-                  href: '#',
-                },
-                {
-                  name: 'youtube',
-                  href: '#',
-                },
-              ].map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-school-primary transition-colors"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="text-white"
-                  >
-                    {social.name === 'facebook' && (
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    )}
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/p/Shreshth-Public-School-100042410786539/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-school-primary transition-colors"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-white">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
 
-                    {social.name === 'twitter' && (
-                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                    )}
-
-                    {social.name === 'instagram' && (
-                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    )}
-
-                    {social.name === 'youtube' && (
-                      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                    )}
-                  </svg>
-                </a>
-              ))}
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/shreshth_public_school/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-school-primary transition-colors"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
             </div>
           </div>
 

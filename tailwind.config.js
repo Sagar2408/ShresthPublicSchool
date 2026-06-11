@@ -57,6 +57,7 @@ module.exports = {
           accent: '#f59e0b',
           dark: '#1e293b',
           light: '#f8fafc',
+          footer: '#4B9BC3',
         },
       },
       borderRadius: {
