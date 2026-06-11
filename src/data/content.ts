@@ -19,7 +19,7 @@ export const schoolInfo = {
   classes: 'Nursery to Class 5th',
   location: 'New Delhi, Delhi, India',
   phone: ['99580 50771'],
-  email: 'info@shresthpublicschool.edu.in',
+  email: 'Shreshthpublicscool@gmail.com',
   address: '1, Vishwakarma marg, Harkesh Nagar, Okhla Industrial Estate, New Delhi, Delhi 110020',
 };
 
