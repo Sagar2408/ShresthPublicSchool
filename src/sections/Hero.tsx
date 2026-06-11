@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="/photos/AboutUsphoto.jpeg"
-          alt="Shresth Public School"
+          alt="Shreshth Public School"
           className="w-full h-full object-cover"
         />
         {/* Gradient Overlay */}

@@ -82,7 +82,7 @@ const Admissions: React.FC = () => {
             Admissions Open
           </span>
           <h2 className="text-3xl lg:text-4xl font-bold text-school-dark mb-4">
-            Join Shresth Public School
+            Join Shreshth Public School
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Admission open for session 2026–27. Secure your child's future with quality education.
@@ -191,7 +191,7 @@ const Admissions: React.FC = () => {
                       onChange={handleChange}
                       required
                       min={1}
-                      max={12}
+                      max={5}
                       className="w-full px-4 py-2 border rounded-lg"
                     />
                   </div>

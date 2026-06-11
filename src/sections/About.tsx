@@ -18,7 +18,7 @@ const About: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-large">
               <img
                 src="/photos/WelcomePhoto.jpeg"
-                alt="Shresth Public School Campus"
+                alt="Shreshth Public School Campus"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               {/* Overlay Card */}
@@ -69,7 +69,7 @@ const About: React.FC = () => {
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               {[
                 { icon: '✓', text: 'CBSE Affiliated Curriculum' },
-                { icon: '✓', text: 'Classes from Nursery to XII' },
+                { icon: '✓', text: 'Classes from Nursery to Class V' },
                 { icon: '✓', text: 'Modern Infrastructure' },
                 { icon: '✓', text: 'Holistic Development' },
               ].map((item, index) => (

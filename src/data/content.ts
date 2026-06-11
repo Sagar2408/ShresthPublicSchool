@@ -13,7 +13,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const schoolInfo = {
-  name: 'Shresth Public School',
+  name: 'Shreshth Public School',
   tagline: 'Excellence in Education, Enlightenment in Life',
   board: 'CBSE',
   classes: 'Nursery to Class 5th',
@@ -24,7 +24,7 @@ export const schoolInfo = {
 };
 
 export const heroContent = {
-  title: 'Welcome to Shresth Public School',
+  title: 'Welcome to Shreshth Public School',
   subtitle: 'Where Every Child Shines Bright',
   description: 'Nurturing young minds with quality education, holistic development, and values that build future leaders.',
   ctaPrimary: 'Admission Open',
@@ -32,9 +32,9 @@ export const heroContent = {
 };
 
 export const aboutContent = {
-  title: 'About Shresth Public School',
-  intro: 'Shresth Public School, is a premier educational institution committed to providing quality education that nurtures academic excellence, character development, and lifelong learning.',
-  history: 'Founded with a vision to create a learning environment that fosters intellectual curiosity and moral values, Shresth Public School has grown from a small institution to one of the most respected schools in the region. Over the years, we have consistently maintained high academic standards while embracing innovative teaching methodologies.',
+  title: 'About Shreshth Public School',
+  intro: 'Shreshth Public School, is a premier educational institution committed to providing quality education that nurtures academic excellence, character development, and lifelong learning.',
+  history: 'Founded with a vision to create a learning environment that fosters intellectual curiosity and moral values, Shreshth Public School has grown from a small institution to one of the most respected schools in the region. Over the years, we have consistently maintained high academic standards while embracing innovative teaching methodologies.',
   stats: [
     { value: '28+', label: 'Years of Excellence' },
     { value: '5000+', label: 'Students Graduated' },
@@ -101,7 +101,7 @@ export const testimonials: Testimonial[] = [
     id: 1,
     name: 'Mrs. Priya Sharma',
     relation: 'Parent of Aarav Sharma, Class 8',
-    content: 'Shresth Public School has transformed my child\'s life. The dedicated teachers and excellent infrastructure have helped Aarav excel in both academics and extracurricular activities. The school\'s focus on values and character building is truly commendable.',
+    content: 'Shreshth Public School has transformed my child\'s life. The dedicated teachers and excellent infrastructure have helped Aarav excel in both academics and extracurricular activities. The school\'s focus on values and character building is truly commendable.',
   },
   {
     id: 2,
@@ -112,14 +112,14 @@ export const testimonials: Testimonial[] = [
   {
     id: 3,
     name: 'Neha Verma',
-    relation: 'Student, Class 12 (Science Stream)',
-    content: 'Being a student of Shresth Public School for the past 12 years, I can confidently say this is the best institution for holistic education. The teachers are not just educators but mentors who guide us at every step.',
+    relation: 'Student, Class 5',
+    content: 'Being a student of Shreshth Public School for the past 12 years, I can confidently say this is the best institution for holistic education. The teachers are not just educators but mentors who guide us at every step.',
   },
   {
     id: 4,
     name: 'Mrs. Kavita Patel',
     relation: 'Parent of Vihaan Patel, Class 5',
-    content: 'The safety measures and caring environment at Shresth Public School give me peace of mind. My son loves going to school every day and has developed a genuine love for learning. Highly recommended!',
+    content: 'The safety measures and caring environment at Shreshth Public School give me peace of mind. My son loves going to school every day and has developed a genuine love for learning. Highly recommended!',
   },
 ];
 
@@ -253,17 +253,11 @@ export const admissionInfo: AdmissionInfo[] = [
   { grade: 'Nursery', ageCriteria: '3+ years as on 31st March', documents: ['Birth Certificate', 'Address Proof', 'Photographs'], fees: '₹50,000/year' },
   { grade: 'LKG & UKG', ageCriteria: '4-5 years as on 31st March', documents: ['Birth Certificate', 'Previous Report Card', 'Address Proof'], fees: '₹55,000/year' },
   { grade: 'Class 1-5', ageCriteria: '6-10 years', documents: ['Birth Certificate', 'Previous Report Card', 'Transfer Certificate'], fees: '₹60,000/year' },
-  { grade: 'Class 6-8', ageCriteria: '11-13 years', documents: ['Previous Report Card', 'Transfer Certificate', 'Character Certificate'], fees: '₹65,000/year' },
-  { grade: 'Class 9-10', ageCriteria: '14-15 years', documents: ['Previous Report Card', 'Transfer Certificate', 'Birth Certificate'], fees: '₹70,000/year' },
-  { grade: 'Class 11-12', ageCriteria: '16-17 years', documents: ['Class 10 Marksheet', 'Transfer Certificate', 'Character Certificate'], fees: '₹80,000/year' },
 ];
 
 
 export const subjectsByGrade = {
   'Nursery-V': ['English', 'Mathematics', 'Environmental Studies', 'Hindi', 'Art & Craft', 'Music', 'Physical Education'],
-  'VI-VIII': ['English', 'Mathematics', 'Science', 'Social Science', 'Hindi', 'Sanskrit/French', 'Computer Science', 'Art & Craft', 'Music', 'Physical Education'],
-  'IX-X': ['English', 'Mathematics', 'Science', 'Social Science', 'Hindi/Sanskrit/French', 'Information Technology'],
-  'XI-XII': ['Physics', 'Chemistry', 'Mathematics/Biology', 'English', 'Optional Subject (Computer Science/Economics/Psychology)'],
 };
 
 export const events = [

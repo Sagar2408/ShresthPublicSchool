@@ -40,7 +40,7 @@ const PrincipalMessage: React.FC = () => {
                         </p>
 
                         <p className="text-gray-700 leading-relaxed">
-                            At <strong>Shresth Public School</strong>, we strongly believe that
+                            At <strong>Shreshth Public School</strong>, we strongly believe that
                             every child is unique and gifted with immense potential. Our goal
                             is to provide a nurturing and inspiring environment where students
                             feel encouraged to explore their curiosity, develop self-confidence,
@@ -70,7 +70,7 @@ const PrincipalMessage: React.FC = () => {
                                 Shri. Naresh Baisla
                             </p>
                             <p className="text-sm text-gray-600">
-                                Principal, Shresth Public School
+                                Principal, Shreshth Public School
                             </p>
                         </div>
                     </div>

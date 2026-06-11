@@ -24,7 +24,7 @@ const WhyChooseUs: React.FC = () => {
             What Makes Us Different
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover why thousands of parents trust Shresth Public School for their children's education
+            Discover why thousands of parents trust Shreshth Public School for their children's education
           </p>
         </div>
 
@@ -69,7 +69,7 @@ const WhyChooseUs: React.FC = () => {
               Ready to Start Your Child's Journey?
             </h3>
             <p className="text-white/90 mb-6 max-w-xl mx-auto">
-              Join thousands of happy parents who have chosen Shresth Public School for their children's bright future.
+              Join thousands of happy parents who have chosen Shreshth Public School for their children's bright future.
             </p>
             <button
               onClick={() => {
