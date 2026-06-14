@@ -3,7 +3,7 @@ import React from 'react';
 const PrincipalMessage: React.FC = () => {
     return (
         <section
-            id="principal"
+            id="director"
             className="section-padding bg-gradient-to-br from-school-primary/5 to-school-secondary/5"
         >
             <div className="container-custom">
@@ -14,7 +14,7 @@ const PrincipalMessage: React.FC = () => {
                         Leadership
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-school-dark">
-                        Principal’s Message
+                        Director’s Message
                     </h2>
                 </div>
 
@@ -67,10 +67,10 @@ const PrincipalMessage: React.FC = () => {
 
                         <div className="mt-6">
                             <p className="font-semibold text-school-dark text-lg">
-                                Shri. Naresh Baisla
+                                Mr. Naresh Baisla
                             </p>
                             <p className="text-sm text-gray-600">
-                                Principal, Shreshth Public School
+                                Director, Shreshth Public School
                             </p>
                         </div>
                     </div>

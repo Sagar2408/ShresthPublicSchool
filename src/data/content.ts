@@ -1,13 +1,15 @@
-import type { NavItem, Testimonial, Announcement, GalleryImage, Facility, TeamMember, AdmissionInfo } from '@/types';
+import type { NavItem, Announcement, GalleryImage, Facility, TeamMember, AdmissionInfo } from '@/types';
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'About Us', href: '#about' },
-  { label: 'Our Principal', href: '#principal' },
+  { label: 'Our Director', href: '#director' },
+  { label: 'Faculty', href: '#faculty' },
   { label: 'Academics', href: '#academics' },
   { label: 'Admissions', href: '#admissions' },
   // { label: 'Facilities', href: '#facilities' },
   { label: 'Gallery', href: '#gallery' },
+  { label: 'Co-Curricular', href: '#cocurricular' },
   { label: 'News & Events', href: '#news' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -36,10 +38,9 @@ export const aboutContent = {
   intro: 'Shreshth Public School, is a premier educational institution committed to providing quality education that nurtures academic excellence, character development, and lifelong learning.',
   history: 'Founded with a vision to create a learning environment that fosters intellectual curiosity and moral values, Shreshth Public School has grown from a small institution to one of the most respected schools in the region. Over the years, we have consistently maintained high academic standards while embracing innovative teaching methodologies.',
   stats: [
-    { value: '28+', label: 'Years of Excellence' },
-    { value: '5000+', label: 'Students Graduated' },
-    { value: '200+', label: 'Expert Faculty' },
-    { value: '98%', label: 'Board Results' },
+    { value: '8+', label: 'Years of Excellence' },
+    { value: '1000+', label: 'Students Graduated' },
+    { value: '99%', label: 'Board Results' },
   ],
 };
 
@@ -62,66 +63,6 @@ export const visionMission = {
   ],
 };
 
-export const whyChooseUs = [
-  {
-    icon: 'GraduationCap',
-    title: 'Academic Excellence',
-    description: 'Consistently achieving 98%+ board results with our result-oriented teaching methodology and dedicated faculty support.',
-  },
-  {
-    icon: 'Users',
-    title: 'Expert Faculty',
-    description: 'Highly qualified and experienced teachers who are passionate about nurturing young minds with personalized attention.',
-  },
-  {
-    icon: 'Building2',
-    title: 'Modern Infrastructure',
-    description: 'State-of-the-art facilities including smart classrooms, well-equipped labs, and extensive sports facilities.',
-  },
-  {
-    icon: 'Palette',
-    title: 'Holistic Development',
-    description: 'Balanced focus on academics, sports, arts, and life skills to ensure all-round development of every child.',
-  },
-  {
-    icon: 'Shield',
-    title: 'Safe Environment',
-    description: 'Comprehensive safety measures including CCTV surveillance, trained security staff, and strict safety protocols.',
-  },
-  {
-    icon: 'Heart',
-    title: 'Values & Character',
-    description: 'Strong emphasis on moral values, ethics, and character building to develop responsible future citizens.',
-  },
-];
-
-
-export const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: 'Mrs. Priya Sharma',
-    relation: 'Parent of Aarav Sharma, Class 8',
-    content: 'Shreshth Public School has transformed my child\'s life. The dedicated teachers and excellent infrastructure have helped Aarav excel in both academics and extracurricular activities. The school\'s focus on values and character building is truly commendable.',
-  },
-  {
-    id: 2,
-    name: 'Mr. Rohan Gupta',
-    relation: 'Parent of Ananya Gupta, Class 10',
-    content: 'The individual attention given to each student is remarkable. My daughter has shown tremendous improvement in her confidence and academic performance. The school provides a perfect balance of studies and co-curricular activities.',
-  },
-  {
-    id: 3,
-    name: 'Neha Verma',
-    relation: 'Student, Class 5',
-    content: 'Being a student of Shreshth Public School for the past 12 years, I can confidently say this is the best institution for holistic education. The teachers are not just educators but mentors who guide us at every step.',
-  },
-  {
-    id: 4,
-    name: 'Mrs. Kavita Patel',
-    relation: 'Parent of Vihaan Patel, Class 5',
-    content: 'The safety measures and caring environment at Shreshth Public School give me peace of mind. My son loves going to school every day and has developed a genuine love for learning. Highly recommended!',
-  },
-];
 
 export const announcements: Announcement[] = [
   { id: 1, title: 'Summer Vacation from May 15 to June 30', date: '2024-05-10', type: 'notice' },
@@ -147,15 +88,9 @@ export const galleryImages: GalleryImage[] = [
   { id: 13, src: '/photos/N1.jpeg',        alt: 'Nursery Class',             category: 'Campus' },
   { id: 14, src: '/photos/N2.jpeg',        alt: 'Young Learners',            category: 'Campus' },
   { id: 15, src: '/photos/N3.jpeg',        alt: 'Early Childhood',           category: 'Campus' },
-  { id: 16, src: '/photos/building1.jpeg', alt: 'School Building',           category: 'Campus' },
-  { id: 17, src: '/photos/building2.jpeg', alt: 'School Campus',             category: 'Campus' },
-  { id: 18, src: '/photos/building3.jpeg', alt: 'Campus View',               category: 'Campus' },
-  { id: 19, src: '/photos/building4.jpeg', alt: 'School Grounds',            category: 'Campus' },
-  { id: 20, src: '/photos/c1.jpeg',        alt: 'Classroom',                 category: 'Campus' },
-  { id: 21, src: '/photos/PrincipalPhoto.jpeg', alt: 'School Life',           category: 'Campus' },
-  { id: 22, src: '/photos/pk.jpeg',        alt: 'Students Playing',          category: 'Students' },
-  { id: 23, src: '/photos/teachers1.jpeg', alt: 'Our Faculty',               category: 'Faculty' },
-  { id: 24, src: '/photos/teachers2.jpeg', alt: 'Teaching Staff',            category: 'Faculty' },
+  { id: 16, src: '/photos/PrincipalPhoto.jpeg', alt: 'School Life',          category: 'Campus' },
+  { id: 17, src: '/photos/teachers1.jpeg', alt: 'Our Faculty',               category: 'Faculty' },
+  { id: 18, src: '/photos/teachers2.jpeg', alt: 'Teaching Staff',            category: 'Faculty' },
 ];
 
 export const facilities: Facility[] = [

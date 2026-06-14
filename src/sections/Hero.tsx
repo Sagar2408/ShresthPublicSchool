@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 container-custom pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-2xl">
           {/* Left Content */}
           <div className="text-white">
             {/* Badge */}
@@ -70,65 +70,16 @@ const Hero: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/20 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-school-accent">28+</div>
+                <div className="text-3xl md:text-4xl font-bold text-school-accent">8+</div>
                 <div className="text-sm text-white/70">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-school-accent">5000+</div>
+                <div className="text-3xl md:text-4xl font-bold text-school-accent">1000+</div>
                 <div className="text-sm text-white/70">Students</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-school-accent">98%</div>
+                <div className="text-3xl md:text-4xl font-bold text-school-accent">99%</div>
                 <div className="text-sm text-white/70">Results</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Content - Quick Info Cards */}
-          <div className="hidden lg:block">
-            <div className="grid grid-cols-2 gap-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="w-12 h-12 bg-school-accent rounded-xl flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                    <circle cx="9" cy="7" r="4"/>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                  </svg>
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Expert Faculty</h3>
-                <p className="text-white/70 text-sm">200+ qualified teachers</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all mt-8">
-                <div className="w-12 h-12 bg-school-secondary rounded-xl flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                  </svg>
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Modern Labs</h3>
-                <p className="text-white/70 text-sm">Science & Computer Labs</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all">
-                <div className="w-12 h-12 bg-school-primary rounded-xl flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
-                    <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-                  </svg>
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Sports Facilities</h3>
-                <p className="text-white/70 text-sm">Indoor & Outdoor Games</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all mt-8">
-                <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                  </svg>
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Library</h3>
-                <p className="text-white/70 text-sm">Rich Collection of Books</p>
               </div>
             </div>
           </div>

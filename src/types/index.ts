@@ -9,14 +9,6 @@ export interface Feature {
   description: string;
 }
 
-export interface Testimonial {
-  id: number;
-  name: string;
-  relation: string;
-  content: string;
-  avatar?: string;
-}
-
 export interface Announcement {
   id: number;
   title: string;

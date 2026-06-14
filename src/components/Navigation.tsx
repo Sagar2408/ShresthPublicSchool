@@ -78,7 +78,7 @@ const Navigation: React.FC = () => {
                   {schoolInfo.name}
                 </h1>
                 <p className="text-xs opacity-80">
-                  {schoolInfo.board} Affiliated
+                  Govt. Recognized
                 </p>
               </div>
             </a>

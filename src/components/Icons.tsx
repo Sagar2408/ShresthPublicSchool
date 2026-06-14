@@ -5,52 +5,6 @@ interface IconProps {
   size?: number;
 }
 
-export const GraduationCap: React.FC<IconProps> = ({ className = '', size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-  </svg>
-);
-
-export const Users: React.FC<IconProps> = ({ className = '', size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-    <circle cx="9" cy="7" r="4"/>
-    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-  </svg>
-);
-
-export const Building2: React.FC<IconProps> = ({ className = '', size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/>
-    <path d="M18 10V4a2 2 0 0 0-2-2h-1.5a1.5 1.5 0 0 0-1.5 1.5v.5a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-.5A1.5 1.5 0 0 0 7.5 4H6a2 2 0 0 0-2 2v6"/>
-    <path d="M10 22v-4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v4"/>
-    <path d="M14 22v-4a2 2 0 0 0-2-2h0a2 2 0 0 0-2 2v4"/>
-  </svg>
-);
-
-export const Palette: React.FC<IconProps> = ({ className = '', size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
-    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
-    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
-    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
-    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/>
-  </svg>
-);
-
-export const Shield: React.FC<IconProps> = ({ className = '', size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-  </svg>
-);
-
-export const Heart: React.FC<IconProps> = ({ className = '', size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-  </svg>
-);
-
 export const Tv: React.FC<IconProps> = ({ className = '', size = 24 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>

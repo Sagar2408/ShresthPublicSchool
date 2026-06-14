@@ -6,6 +6,7 @@ const Academics: React.FC = () => {
     'Mathematics',
     'Environmental Studies',
     'Hindi',
+    'Sanskrit',
     'Art & Craft',
     'Music',
     'Physical Education',
@@ -58,10 +59,10 @@ const Academics: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-school-dark mb-1">
-                    CBSE Curriculum
+                    NEP Based Curriculum
                   </h4>
                   <p className="text-gray-600 text-sm">
-                    Following CBSE curriculum with modern teaching methodologies.
+                    Following the National Education Policy (NEP) with activity-based and holistic teaching methodologies.
                   </p>
                 </div>
               </div>

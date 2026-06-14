@@ -25,15 +25,15 @@ const About: React.FC = () => {
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-5 shadow-lg">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-school-primary">28+</div>
+                    <div className="text-2xl lg:text-3xl font-bold text-school-primary">8+</div>
                     <div className="text-xs lg:text-sm text-gray-600">Years</div>
                   </div>
                   <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-school-secondary">5000+</div>
+                    <div className="text-2xl lg:text-3xl font-bold text-school-secondary">1000+</div>
                     <div className="text-xs lg:text-sm text-gray-600">Students</div>
                   </div>
                   <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-school-accent">98%</div>
+                    <div className="text-2xl lg:text-3xl font-bold text-school-accent">99%</div>
                     <div className="text-xs lg:text-sm text-gray-600">Results</div>
                   </div>
                 </div>
@@ -68,8 +68,6 @@ const About: React.FC = () => {
             {/* Features List */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               {[
-                { icon: '✓', text: 'CBSE Affiliated Curriculum' },
-                { icon: '✓', text: 'Classes from Nursery to Class V' },
                 { icon: '✓', text: 'Modern Infrastructure' },
                 { icon: '✓', text: 'Holistic Development' },
               ].map((item, index) => (
