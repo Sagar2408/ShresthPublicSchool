@@ -22,7 +22,7 @@ export const schoolInfo = {
   location: 'New Delhi, Delhi, India',
   phone: ['99580 50771'],
   email: 'Shreshthpublicscool@gmail.com',
-  address: '1, Vishwakarma marg, Harkesh Nagar, Okhla Industrial Estate, New Delhi, Delhi 110020',
+  address: 'I-22a Harkesh Nagar near DDA Park New delhi-110020',
 };
 
 export const heroContent = {
@@ -65,7 +65,7 @@ export const visionMission = {
 
 
 export const announcements: Announcement[] = [
-  { id: 1, title: 'Parent Teacher Meeting scheduled on 4th July 2026', date: '2026-07-04', type: 'event' },
+  { id: 1, title: 'Parent Teacher Meeting scheduled on 11th July 2026 (8:30 AM to 11:30 AM)', date: '2026-07-11', type: 'event' },
 ];
 
 export const galleryImages: GalleryImage[] = [
@@ -193,5 +193,5 @@ export const subjectsByGrade = {
 };
 
 export const events = [
-  { id: 1, title: 'Parent Teacher Meeting', date: '2026-07-04', type: 'upcoming', description: 'Parent Teacher Meeting scheduled on 4th July 2026. All parents are requested to attend and meet the respective class teachers to discuss student progress and academic planning.' },
+  { id: 1, title: 'Parent Teacher Meeting', date: '2026-07-11', type: 'upcoming', description: 'Parent Teacher Meeting scheduled on 11th July 2026 from 8:30 AM to 11:30 AM. All parents are requested to attend and meet the respective class teachers to discuss student progress and academic planning.' },
 ];

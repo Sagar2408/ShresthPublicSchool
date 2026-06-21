@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         <img
           src="/photos/AboutUsphoto.jpeg"
           alt="Shreshth Public School"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover md:object-cover object-[center_20%] md:object-center"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-school-dark/90 via-school-dark/70 to-transparent" />
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/20 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-12 pt-8 border-t border-white/20 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-school-accent">8+</div>
                 <div className="text-sm text-white/70">Years Experience</div>
@@ -80,6 +80,10 @@ const Hero: React.FC = () => {
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-school-accent">99%</div>
                 <div className="text-sm text-white/70">Results</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-school-accent">30:1</div>
+                <div className="text-sm text-white/70">Student-Teacher Ratio</div>
               </div>
             </div>
           </div>
