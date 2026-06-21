@@ -3,7 +3,7 @@ import type { NavItem, Announcement, GalleryImage, Facility, TeamMember, Admissi
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'About Us', href: '#about' },
-  { label: 'Our Director', href: '#director' },
+  { label: 'Our Chairman', href: '#chairman' },
   { label: 'Faculty', href: '#faculty' },
   { label: 'Academics', href: '#academics' },
   { label: 'Admissions', href: '#admissions' },
@@ -35,7 +35,7 @@ export const heroContent = {
 
 export const aboutContent = {
   title: 'About Shreshth Public School',
-  intro: 'Shreshth Public School, is a premier educational institution committed to providing quality education that nurtures academic excellence, character development, and lifelong learning.',
+  intro: 'Shreshth Public School, is a premier School committed to providing quality education that nurtures academic excellence, character development, and lifelong learning.',
   history: 'Founded with a vision to create a learning environment that fosters intellectual curiosity and moral values, Shreshth Public School has grown from a small institution to one of the most respected schools in the region. Over the years, we have consistently maintained high academic standards while embracing innovative teaching methodologies.',
   stats: [
     { value: '8+', label: 'Years of Excellence' },
@@ -65,18 +65,14 @@ export const visionMission = {
 
 
 export const announcements: Announcement[] = [
-  { id: 1, title: 'Summer Vacation from May 15 to June 30', date: '2024-05-10', type: 'notice' },
-  { id: 2, title: 'Annual Day Function - March 25, 2024', date: '2024-03-15', type: 'event' },
-  { id: 3, title: 'Admission Open for Session 2024-25', date: '2024-01-15', type: 'announcement' },
-  { id: 4, title: 'CBSE Board Exams Start from February 15', date: '2024-02-01', type: 'notice' },
-  { id: 5, title: 'Parent-Teacher Meeting - April 10', date: '2024-04-05', type: 'event' },
+  { id: 1, title: 'Parent Teacher Meeting scheduled on 4th July 2026', date: '2026-07-04', type: 'event' },
 ];
 
 export const galleryImages: GalleryImage[] = [
   { id: 1,  src: '/photos/K1.jpeg',        alt: 'Students in Class',        category: 'Students' },
   { id: 2,  src: '/photos/K2.jpeg',        alt: 'Classroom Activity',        category: 'Students' },
   { id: 3,  src: '/photos/K3.jpeg',        alt: 'Students Learning',         category: 'Students' },
-  { id: 4,  src: '/photos/K4.jpeg',        alt: 'Students at Work',          category: 'Students' },
+  { id: 4,  src: '/photos/libraryphoto.jpg', alt: 'Library',                   category: 'Facilities' },
   { id: 5,  src: '/photos/K5.jpeg',        alt: 'Classroom Engagement',      category: 'Students' },
   { id: 6,  src: '/photos/k6.jpeg',        alt: 'Students in Session',       category: 'Students' },
   { id: 7,  src: '/photos/k7.jpeg',        alt: 'Learning Together',         category: 'Students' },
@@ -88,9 +84,10 @@ export const galleryImages: GalleryImage[] = [
   { id: 13, src: '/photos/N1.jpeg',        alt: 'Nursery Class',             category: 'Campus' },
   { id: 14, src: '/photos/N2.jpeg',        alt: 'Young Learners',            category: 'Campus' },
   { id: 15, src: '/photos/N3.jpeg',        alt: 'Early Childhood',           category: 'Campus' },
-  { id: 16, src: '/photos/PrincipalPhoto.jpeg', alt: 'School Life',          category: 'Campus' },
+  { id: 16, src: '/photos/computerlabphoto.jpg',  alt: 'Computer Lab',         category: 'Facilities' },
   { id: 17, src: '/photos/teachers1.jpeg', alt: 'Our Faculty',               category: 'Faculty' },
   { id: 18, src: '/photos/teachers2.jpeg', alt: 'Teaching Staff',            category: 'Faculty' },
+  { id: 19, src: '/photos/sciencelab.jpg',   alt: 'Science Lab',              category: 'Facilities' },
 ];
 
 export const facilities: Facility[] = [
@@ -196,10 +193,5 @@ export const subjectsByGrade = {
 };
 
 export const events = [
-  { id: 1, title: 'Annual Day Function', date: '2024-03-25', type: 'upcoming', description: 'Grand cultural celebration showcasing student talents' },
-  { id: 2, title: 'Sports Day', date: '2024-02-15', type: 'past', description: 'Inter-house sports competition and athletic events' },
-  { id: 3, title: 'Science Exhibition', date: '4-01-2024', type: 'upcoming', description: 'Display of innovative science projects by students' },
-  { id: 4, title: 'Parent-Teacher Meeting', date: '2024-04-10', type: 'upcoming', description: 'Mid-term progress discussion with parents' },
-  { id: 5, title: 'Summer Camp', date: '2024-05-01', type: 'past', description: 'Fun-filled activities and learning workshops' },
-  { id: 6, title: 'Independence Day', date: '2024-08-15', type: 'upcoming', description: 'Patriotic celebrations and cultural programs' },
+  { id: 1, title: 'Parent Teacher Meeting', date: '2026-07-04', type: 'upcoming', description: 'Parent Teacher Meeting scheduled on 4th July 2026. All parents are requested to attend and meet the respective class teachers to discuss student progress and academic planning.' },
 ];

@@ -1,21 +1,18 @@
 import React from 'react';
 
 const facultyData = [
-  { sno: 1,  name: 'Ms. Sunita Sharma',  qualification: 'M.A. (English), B.Ed.' },
-  { sno: 2,  name: 'Mr. Rajesh Kumar',   qualification: 'M.Sc. (Mathematics), B.Ed.' },
-  { sno: 3,  name: 'Ms. Pooja Verma',    qualification: 'M.A. (Hindi), B.Ed.' },
-  { sno: 4,  name: 'Mr. Vikas Singh',    qualification: 'M.Sc. (Science), B.Ed.' },
-  { sno: 5,  name: 'Ms. Anita Gupta',    qualification: 'M.A. (Social Studies), B.Ed.' },
-  { sno: 6,  name: 'Ms. Rekha Yadav',   qualification: 'M.A. (Sanskrit), B.Ed.' },
-  { sno: 7,  name: 'Mr. Amit Sharma',   qualification: 'M.P.Ed. (Physical Education)' },
-  { sno: 8,  name: 'Ms. Priya Patel',   qualification: 'M.A. (Art & Craft), B.Ed.' },
-  { sno: 9,  name: 'Ms. Kavita Joshi',  qualification: 'M.Sc. (Computer Science), B.Ed.' },
-  { sno: 10, name: 'Mr. Deepak Nagar',  qualification: 'M.A. (Music), B.Ed.' },
-  { sno: 11, name: 'Ms. Meena Kumari',  qualification: 'B.A., B.Ed. (Nursery Teacher)' },
-  { sno: 12, name: 'Ms. Neha Bhatia',   qualification: 'B.A., B.Ed. (Primary Teacher)' },
-  { sno: 13, name: 'Mr. Suresh Tiwari', qualification: 'M.Com., B.Ed.' },
-  { sno: 14, name: 'Ms. Ritu Sharma',   qualification: 'M.A. (EVS), B.Ed.' },
-  { sno: 15, name: 'Mr. Lokesh Verma',  qualification: 'M.A., B.Ed.' },
+  { sno: 1,  name: 'Ms. Shikha Basista',    qualification: 'M.A., B.Ed., PG Diploma in Translation' },
+  { sno: 2,  name: 'Ms. Pooja',             qualification: 'B.A., D.El.Ed., CTET' },
+  { sno: 3,  name: 'Ms. Kajal',             qualification: 'D.El.Ed., CTET' },
+  { sno: 4,  name: 'Ms. Monika Gupta',      qualification: 'M.A., B.T.C., UPTET, CTET' },
+  { sno: 5,  name: 'Ms. Usha',              qualification: 'B.A., B.Ed., CTET I & II' },
+  { sno: 6,  name: 'Ms. Saraswati',         qualification: 'B.Com., B.Ed.' },
+  { sno: 7,  name: 'Ms. Megha Sharma',      qualification: 'M.Com., CTET' },
+  { sno: 8,  name: 'Ms. Sumita',            qualification: 'PRT' },
+  { sno: 9,  name: 'Ms. Tanya Bhati',       qualification: 'B.A., B.Ed., CTET II' },
+  { sno: 10, name: 'Ms. Babita',            qualification: 'M.A., B.Ed.' },
+  { sno: 11, name: 'Ms. Neelam Gauniyal',   qualification: 'B.A., Diploma in ECCE' },
+  { sno: 12, name: 'Ms. Pooja Sharma',      qualification: 'N.P.T.C.' },
 ];
 
 const Faculty: React.FC = () => {
@@ -49,7 +46,7 @@ const Faculty: React.FC = () => {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-large">
               <img
-                src="/photos/teachers2.jpeg"
+                src="/photos/teachersgroupphoto.jpeg"
                 alt="Teaching Staff at Shreshth Public School"
                 className="w-full h-56 lg:h-64 object-cover"
               />

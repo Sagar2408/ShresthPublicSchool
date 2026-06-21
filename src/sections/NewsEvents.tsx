@@ -4,7 +4,6 @@ import { Calendar, ArrowRight } from '@/components/Icons';
 
 const NewsEvents: React.FC = () => {
   const upcomingEvents = events.filter(event => event.type === 'upcoming');
-  const pastEvents = events.filter(event => event.type === 'past');
 
   return (
     <section id="news" className="section-padding bg-gradient-to-br from-school-primary/5 to-school-secondary/5">
@@ -81,30 +80,6 @@ const NewsEvents: React.FC = () => {
               ))}
             </div>
 
-            {/* Past Events */}
-            <h3 className="text-xl font-bold text-school-dark mb-6 mt-12">Past Events</h3>
-            <div className="space-y-4">
-              {pastEvents.slice(0, 3).map((event, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-5 shadow-soft flex items-center gap-4 group hover:shadow-medium transition-shadow"
-                >
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-school-primary/10 transition-colors">
-                    <Calendar size={24} className="text-gray-400 group-hover:text-school-primary transition-colors" />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-school-dark group-hover:text-school-primary transition-colors">
-                      {event.title}
-                    </h4>
-                    <p className="text-gray-600 text-sm mb-1">{event.description}</p>
-                    <span className="text-gray-500 text-sm">{event.date}</span>
-                  </div>
-                  <button className="text-school-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ArrowRight size={20} />
-                  </button>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 

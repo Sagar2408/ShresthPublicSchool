@@ -98,16 +98,6 @@ const Navigation: React.FC = () => {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden lg:flex items-center gap-3">
-              <button
-                onClick={() => scrollToSection('#admissions')}
-                className="bg-school-primary text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
-              >
-                Apply Now
-              </button>
-            </div>
-
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -131,14 +121,6 @@ const Navigation: React.FC = () => {
                 {item.label}
               </button>
             ))}
-            <div className="mt-4 pt-4 border-t">
-              <button
-                onClick={() => scrollToSection('#admissions')}
-                className="w-full bg-school-primary text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-              >
-                Apply Now
-              </button>
-            </div>
           </div>
         </div>
       </nav>
