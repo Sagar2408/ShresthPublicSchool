@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             </div>
 
             <p className="text-white/70 leading-relaxed mb-6">
-              Excellence in Education, Enlightenment in Life. Nurturing young minds since { }.
+              Excellence in Education, Enlightenment in Life. Nurturing young minds since 2018{ }
             </p>
 
             {/* SOCIAL LINKS */}

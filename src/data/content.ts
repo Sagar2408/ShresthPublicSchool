@@ -21,7 +21,7 @@ export const schoolInfo = {
   classes: 'Nursery to Class 5th',
   location: 'New Delhi, Delhi, India',
   phone: ['99580 50771'],
-  email: 'Shreshthpublicscool@gmail.com',
+  email: 'Shreshthpublicschool@gmail.com',
   address: 'I-22a Harkesh Nagar near DDA Park New delhi-110020',
 };
 
