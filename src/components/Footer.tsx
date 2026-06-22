@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             <div className="flex gap-3">
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/p/Shreshth-Public-School-100042410786539/"
+                href="https://www.facebook.com/people/Shreshth-Public-School/61584605632295/?mibextid=wwXIfr&rdid=G6rfypK3TOisJgZg&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18qsDHRma7%2F%3Fmibextid%3DwwXIfr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-school-primary transition-colors"

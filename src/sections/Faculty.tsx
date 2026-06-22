@@ -1,20 +1,21 @@
 import React from 'react';
 
 const facultyData = [
-  { sno: 1,  name: 'Ms. Shikha Basista',    qualification: 'M.A., B.Ed., PG Diploma in Translation' },
-  { sno: 2,  name: 'Ms. Pooja',             qualification: 'B.A., D.El.Ed., CTET' },
-  { sno: 3,  name: 'Ms. Kajal',             qualification: 'D.El.Ed., CTET' },
-  { sno: 4,  name: 'Ms. Monika Gupta',      qualification: 'M.A., B.T.C., UPTET, CTET' },
-  { sno: 5,  name: 'Ms. Usha',              qualification: 'B.A., B.Ed., CTET I & II' },
-  { sno: 6,  name: 'Ms. Megha Sharma',      qualification: 'M.Com., CTET' },
-  { sno: 7,  name: 'Ms. Sumita',            qualification: 'PRT' },
-  { sno: 8,  name: 'Ms. Tanya Bhati',       qualification: 'B.A., B.Ed., CTET II' },
-  { sno: 9,  name: 'Ms. Babita',            qualification: 'M.A., B.Ed.' },
-  { sno: 10, name: 'Ms. Neelam Gauniyal',   qualification: 'B.A., Diploma in ECCE' },
-  { sno: 11, name: 'Ms. Pooja Sharma',      qualification: 'N.P.T.C.' },
-  { sno: 12, name: 'Ms. Simran',            qualification: 'B.A. (Hons.) English, D.El.Ed., CTET, M.A. English (Pursuing)' },
-  { sno: 13, name: 'Ms. Shivani Choudhary', qualification: 'B.A., B.Ed.' },
-  { sno: 14, name: 'Ms. Neelam Mishra',    qualification: 'B.Com., NPTT' },
+  { sno: 1,  name: 'Ms. Shikha Basista (Principal)',      qualification: 'M.A., B.Ed., PG Diploma in Translation' },
+  { sno: 2,  name: 'Ms. Rakhi (Vice Principal)',      qualification: 'B.A., B.Ed., CTET Paper 2nd' },
+  { sno: 3,  name: 'Ms. Pooja',             qualification: 'B.A., D.El.Ed., CTET' },
+  { sno: 4,  name: 'Ms. Kajal',             qualification: 'D.El.Ed., CTET' },
+  { sno: 5,  name: 'Ms. Monika Gupta',      qualification: 'M.A., B.T.C., UPTET, CTET' },
+  { sno: 6,  name: 'Ms. Usha',              qualification: 'B.A., B.Ed., CTET I & II' },
+  { sno: 7,  name: 'Ms. Megha Sharma',      qualification: 'M.Com., CTET' },
+  { sno: 8,  name: 'Ms. Sumita',            qualification: 'M.A., B.Ed.' },
+  { sno: 9,  name: 'Ms. Tanya Bhati',       qualification: 'B.A., B.Ed., CTET II' },
+  { sno: 10, name: 'Ms. Babita',            qualification: 'M.A., B.Ed.' },
+  { sno: 11, name: 'Ms. Neelam Gauniyal',   qualification: 'B.A., Diploma in ECCE' },
+  { sno: 12, name: 'Ms. Pooja Sharma',      qualification: 'N.P.T.C.' },
+  { sno: 13, name: 'Ms. Simran',            qualification: 'B.A. (Hons.) English, D.El.Ed., CTET, M.A. English (Pursuing)' },
+  { sno: 14, name: 'Ms. Shivani Choudhary', qualification: 'B.A., B.Ed.' },
+  { sno: 15, name: 'Ms. Neelam Mishra',    qualification: 'B.Com., NPTT' },
 ];
 
 const Faculty: React.FC = () => {
@@ -74,7 +75,7 @@ const Faculty: React.FC = () => {
                     }`}
                   >
                     <td className="px-4 py-3 font-bold text-school-primary">{member.sno}</td>
-                    <td className="px-4 py-3 font-medium text-school-dark">{member.name}</td>
+                    <td className="px-4 py-3 font-medium text-school-dark whitespace-nowrap">{member.name}</td>
                     <td className="px-4 py-3 text-gray-600">{member.qualification}</td>
                   </tr>
                 ))}
